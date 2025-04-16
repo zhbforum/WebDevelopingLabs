@@ -7,7 +7,7 @@ const isDev = process.env.ROLLUP_WATCH === 'true';
 
 export default 
 {
-    input: 'script.js',
+    input: './src/index.js',
     output: 
     {
       file: './dist/server.mjs',

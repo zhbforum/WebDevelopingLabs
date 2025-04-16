@@ -1,4 +1,5 @@
-{
-    "message": "Some data"
-}
-  
+[
+  {
+    "post_request": "Testing"
+  }
+]

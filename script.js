@@ -1,4 +1,0 @@
-import data from './data.json';
-
-console.log('Testing JSON import...');
-console.log('JSON:', data);
