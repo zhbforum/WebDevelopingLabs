@@ -1,5 +1,5 @@
-import AddTodo from "./componenets/AddTodo";
-import TodoList from "./componenets/TodoList";
+import AddTodo from "./components/AddTodo";
+import TodoList from "./components/TodoList";
 
 const App = () => {
   return (
