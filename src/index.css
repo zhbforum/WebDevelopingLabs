@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'CascadiaCove Nerd Font Mono', monospace;
+  background: #0f111a;
+  color: #dbeafe;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  background: linear-gradient(135deg, #3b82f6, #60a5fa);
+  color: white;
+  border: none;
+  padding: 0.75rem 2rem;
+  font-size: 1.1rem;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 12px rgba(59, 130, 246, 0.5);
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 20px rgba(96, 165, 250, 0.8);
+}
+
+.info-box {
+  position: relative;
+  padding: 1.5rem 2rem;
+  border-radius: 16px;
+  background: rgba(17, 24, 39, 0.8);
+  backdrop-filter: blur(12px);
+  color: #e0e0e0;
+  margin-bottom: 1.5rem;
+  z-index: 0;
+  overflow: hidden;
+  border: 2px solid transparent;
+}
+
+.info-box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 2px;
+  border-radius: 16px;
+  background: linear-gradient(130deg,
+      #3b82f6,
+      #8b5cf6,
+      #ec4899,
+      #3b82f6);
+  background-size: 300% 300%;
+  animation: fullBorderAnim 6s ease infinite;
+  mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  -webkit-mask-composite: destination-out;
+  z-index: -1;
+}
+
+@keyframes fullBorderAnim {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.copied-text {
+  font-weight: bold;
+  background: linear-gradient(90deg, #3b82f6, #ec4899, #8b5cf6, #3b82f6);
+  background-size: 300% 300%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: copiedGradient 4s ease infinite;
+}
+
+@keyframes copiedGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
