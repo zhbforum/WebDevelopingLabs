@@ -1,0 +1,26 @@
+{
+  "name": "webdevelopinglabs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhbforum/WebDevelopingLabs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zhbforum/WebDevelopingLabs/issues"
+  },
+  "homepage": "https://github.com/zhbforum/WebDevelopingLabs#readme",
+  "dependencies": {
+    "express": "^5.1.0",
+    "express-session": "^1.18.1",
+    "keycloak-connect": "^26.1.1"
+  }
+}
