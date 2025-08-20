@@ -1,11 +1,78 @@
 body 
 {
+    margin: 0;
     font-family: JetBrains Mono, monospace;
     background-color: #f4f4f4;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background: black;
+    overflow: hidden;
+}
+ 
+.clock-container 
+{
+    text-align: center;
+    background: rgba(255, 255, 255, 0.034);
+    backdrop-filter: blur(15px);
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+    width: 380px;
+    height: 220px;
+    overflow: hidden;
+    animation: fadeIn 1s ease-in-out;
+}
+ 
+#clock 
+{
+    font-size: 4.5rem;
+    color: #ffffff;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    white-space: nowrap;
+    text-shadow: 2px 4px 10px rgba(235, 184, 184, 0.562);
+    animation: pulse 2s infinite alternate;
+}
+ 
+button 
+{
+    background: rgba(255, 255, 255, 0.3);
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    padding: 14px 35px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+}
+ 
+button:hover 
+{
+    background: rgba(255, 255, 255, 0.5);
+    transform: scale(1.08);
+    box-shadow: 0 8px 20px rgba(255, 255, 255, 0.3);
+}
+ 
+@keyframes fadeIn 
+{
+    from 
+    {
+       opacity: 0;
+       transform: scale(0.9);
+    }
+ 
+    to 
+    {
+       opacity: 1;
+       transform: scale(1);
+    }
+ }
+ 
     margin: 0;
 }
 
